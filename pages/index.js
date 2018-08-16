@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import Router from 'next/router';
 import {Button} from 'reactstrap';
 
 const Wrapper = props => {
@@ -32,15 +33,15 @@ const Menu = props => {
     )
 };
 
-const MenuItem = props => {
+const MenuItem = ({ to = "#", children, active = false }) => {
     return (
-        <div className={"rounded ml-2 pt-2 pl-4 pr-4 small text-uppercase text-white pointer font-weight-light " + (props.active ? "bg-darkblue":"")}>{props.children}</div>
+        <div className={"rounded ml-2 pt-2 pl-4 pr-4 small text-uppercase text-white pointer font-weight-light " + (active ? "bg-darkblue":"")} onClick={() => Router.push(to)}>{children}</div>
     );
 };
 
-const FlexBetween = props => {
+const FlexBetween = ({ children}) => {
     return (
-        <div className={"d-flex justify-content-between"}>{props.children}</div>
+        <div className={"d-flex justify-content-between"}>{children}</div>
     );
 }
 
@@ -79,7 +80,7 @@ class Index extends React.Component {
                                 <MenuItem active>Home</MenuItem>
                                 <MenuItem>About</MenuItem>
                                 <MenuItem>Help</MenuItem>
-                                <MenuItem>Sign In</MenuItem>
+                                <MenuItem to={"/login"}>Sign In</MenuItem>
                             </Menu>
                         </FlexBetween>
                         <Divider size={5}/>
@@ -89,7 +90,7 @@ class Index extends React.Component {
                                     Pendidikan Jarak Jauh PENS.
                                 </div>
                                 <div>
-                                    <Button className="bg-purple border-0">SIGN IN</Button>
+                                    <Button className="bg-purple border-0" onClick={() => Router.push('/login')}>SIGN IN</Button>
                                 </div>    
                             </Content>
                             <Slide>
