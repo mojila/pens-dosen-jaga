@@ -17,7 +17,7 @@ class Student extends React.Component {
             <Col>
               <FormGroup>
                 <Label className="small">E-mail Student</Label>
-                <Input type="email" size="sm" required/>
+                <Input type="email" bsSize={"sm"} required/>
               </FormGroup>
             </Col>
           </Row>
@@ -25,7 +25,7 @@ class Student extends React.Component {
             <Col>
               <FormGroup>
                 <Label className="small">Password</Label>
-                <Input type="password" size="sm" required/>
+                <Input type="password" bsSize={"sm"} required/>
               </FormGroup>
             </Col>
           </Row>

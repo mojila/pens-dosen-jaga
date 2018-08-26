@@ -67,7 +67,7 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 8);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -394,7 +394,7 @@ function (_React$Component) {
           lineNumber: 52
         }
       }, "E-mail Dosen"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["Input"], {
-        size: "sm",
+        bsSize: "sm",
         required: true,
         disabled: this.state.error,
         __source: {
@@ -413,7 +413,7 @@ function (_React$Component) {
           lineNumber: 57
         }
       }, "\xA0"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["Input"], {
-        size: "sm",
+        bsSize: "sm",
         value: "@pens.ac.id",
         disabled: true,
         __source: {
@@ -443,7 +443,7 @@ function (_React$Component) {
         }
       }, "Password"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["Input"], {
         type: "password",
-        size: "sm",
+        bsSize: "sm",
         required: true,
         disabled: this.state.error,
         __source: {
@@ -571,7 +571,7 @@ function (_React$Component) {
         }
       }, "E-mail Student"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["Input"], {
         type: "email",
-        size: "sm",
+        bsSize: "sm",
         required: true,
         __source: {
           fileName: _jsxFileName,
@@ -600,7 +600,7 @@ function (_React$Component) {
         }
       }, "Password"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["Input"], {
         type: "password",
-        size: "sm",
+        bsSize: "sm",
         required: true,
         __source: {
           fileName: _jsxFileName,
@@ -730,7 +730,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 8:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("./pages/login.js");

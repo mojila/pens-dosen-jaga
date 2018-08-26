@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from 'reactstrap';
-import { withRouter } from 'next/router';
+import Router, { withRouter } from 'next/router';
 import Ionicon from 'react-ionicons';
 
 class CourseProfile extends React.Component {
@@ -31,7 +31,11 @@ class SidebarCourse extends React.Component {
                     <Button size="sm" color="outline-primary" block>Buat Tugas</Button>
                 </div>
                 <div className="mt-2">
-                    <Button size="sm" color="outline-primary" block>Buat Materi</Button>
+                    <Button size="sm" color="outline-primary"
+                        onClick={() => Router.push('/dashboard/lecturer/course/add-material')}
+                        block>
+                        Buat Materi
+                    </Button>
                 </div>
                 <div className="mt-2 mb-2"><hr/></div>
                 <div className="p-1 small d-flex justify-content-between pointer mb-1">

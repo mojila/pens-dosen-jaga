@@ -50,19 +50,19 @@ class Lecturer extends React.Component {
                     <Col md="6">
                         <FormGroup>
                             <Label className="small">E-mail Dosen</Label>
-                            <Input size="sm" required disabled={this.state.error}/>
+                            <Input bsSize={"sm"} required disabled={this.state.error}/>
                         </FormGroup>
                     </Col>
                     <Col>
                         <Label className="small">&nbsp;</Label>
-                        <Input size="sm" value="@pens.ac.id" disabled/>
+                        <Input bsSize={"sm"} value="@pens.ac.id" disabled/>
                     </Col>
                 </Row>
                 <Row>
                     <Col>
                         <FormGroup>
                             <Label className="small">Password</Label>
-                            <Input type="password" size="sm" required disabled={this.state.error}/>
+                            <Input type="password" bsSize={"sm"} required disabled={this.state.error}/>
                         </FormGroup>
                     </Col>
                 </Row>

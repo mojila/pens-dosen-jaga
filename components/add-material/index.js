@@ -84,10 +84,18 @@ class AddMaterialPage extends React.Component {
                                 <Title>Tentang Buku</Title>
                                 <div><hr/></div>
                                 <div className="mb-2">
-                                    <Input size="sm" placeholder="Judul Buku"/>
+                                    <Input bsSize="sm" placeholder="Judul Buku"/>
                                 </div>
                                 <div className="mb-2">
                                     <textarea className="form-control form-control-sm" placeholder="Deskripsi Buku"></textarea>
+                                </div>
+                                <div className={"mb-2"}>
+                                    <div className={"p-2 border text-center"}>
+                                        <Button>Unggah Berkas</Button>
+                                    </div>
+                                </div>
+                                <div className={"text-right"}>
+                                    <Button className={"rounded-0 pl-5 pr-5"} color={"primary"}>Buat</Button>
                                 </div>
                             </div>
                         </div>

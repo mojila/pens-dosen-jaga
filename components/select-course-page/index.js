@@ -1,6 +1,6 @@
 import React from 'react'
-import { withRouter } from 'next/router'
-import { Navbar, Container, Button, Input } from 'reactstrap'
+import Router, { withRouter } from 'next/router'
+import { Container, Button, Input } from 'reactstrap'
 import Ionicon from 'react-ionicons'
 
 import Navigator from './navigator';
@@ -27,6 +27,8 @@ class BreadCrumb extends React.Component {
 
 class SelectCoursePage extends React.Component {
     render() {
+        let {router} = this.props;
+
         return (
             <div>
                 <Navigator/>
@@ -37,8 +39,8 @@ class SelectCoursePage extends React.Component {
                             <BreadCrumb/>
                             <div className="p-2 bg-light border mt-2">
                                 <div className="p-1 d-flex justify-content-between">
-                                    <div><Button size="sm" color="outline-success">Tambah Materi</Button></div>
-                                    <div><Input size="sm" placeholder="Pencarian ..."/></div>
+                                    <div><Button size="sm" color="outline-success" onClick={() => Router.push('/dashboard/lecturer/course/add-material')}>Tambah Materi</Button></div>
+                                    <div><Input bsSize={"sm"} placeholder="Pencarian ..."/></div>
                                 </div>
                             </div>
                             <div className="p-2 bg-light border mt-2">

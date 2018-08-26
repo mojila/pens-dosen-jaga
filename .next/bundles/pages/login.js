@@ -1,7 +1,7 @@
 module.exports =
 __NEXT_REGISTER_PAGE('/login', function() {
           var comp =
-      webpackJsonp([6],{
+      webpackJsonp([9],{
 
 /***/ "./components/form-login/index.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -323,7 +323,7 @@ function (_React$Component) {
           lineNumber: 52
         }
       }, "E-mail Dosen"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["f" /* Input */], {
-        size: "sm",
+        bsSize: "sm",
         required: true,
         disabled: this.state.error,
         __source: {
@@ -342,7 +342,7 @@ function (_React$Component) {
           lineNumber: 57
         }
       }, "\xA0"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["f" /* Input */], {
-        size: "sm",
+        bsSize: "sm",
         value: "@pens.ac.id",
         disabled: true,
         __source: {
@@ -372,7 +372,7 @@ function (_React$Component) {
         }
       }, "Password"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["f" /* Input */], {
         type: "password",
-        size: "sm",
+        bsSize: "sm",
         required: true,
         disabled: this.state.error,
         __source: {
@@ -499,7 +499,7 @@ function (_React$Component) {
         }
       }, "E-mail Student"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["f" /* Input */], {
         type: "email",
-        size: "sm",
+        bsSize: "sm",
         required: true,
         __source: {
           fileName: _jsxFileName,
@@ -528,7 +528,7 @@ function (_React$Component) {
         }
       }, "Password"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["f" /* Input */], {
         type: "password",
-        size: "sm",
+        bsSize: "sm",
         required: true,
         __source: {
           fileName: _jsxFileName,
@@ -14786,7 +14786,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 5:
+/***/ 9:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("./pages/login.js");
@@ -14794,7 +14794,7 @@ module.exports = __webpack_require__("./pages/login.js");
 
 /***/ })
 
-},[5])
+},[9])
           return { page: comp.default }
         })
       ;

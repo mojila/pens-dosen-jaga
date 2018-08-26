@@ -22,7 +22,7 @@ class Profile extends React.Component {
 
     render() {
         return (
-            <div className={"mt-1"}>
+            <div className={"ml-4"}>
                 <div className={"small text-secondary pointer noselect"} onClick={this._onToggle}>
                     <Ionicon icon={this.state.active ? "ios-person":"ios-person-outline"}/> Profil
                 </div>
@@ -34,14 +34,35 @@ class Profile extends React.Component {
     }
 }
 
+const Home = props => {
+    return (
+        <div className={"small text-secondary pointer noselect"} onClick={() => Router.push('/dashboard/lecturer')}>
+            <Ionicon icon={props.active ? "ios-home":"ios-home-outline"}/> Beranda
+        </div>
+    );
+};
+
+const Menu = props => {
+    return (
+        <div className={"mt-1 d-flex justify-content-start"}>
+            {props.children}
+        </div>
+    );
+};
+
 class Navigator extends React.Component {
     render() {
+        let {router} = this.props;
+
         return (
             <Navbar fixed="top" className="border-bottom" color="white">
                 <Container>
                     <div className="w-100 d-flex justify-content-between">
                         <Logo><img src="/static/images/dosenjaga.png" height="32" alt="Dosen Jaga" className="rounded"/></Logo>
-                        <Profile/>
+                        <Menu>
+                            <Home active={router.pathname === "/dashboard/lecturer" ? true:false}/>
+                            <Profile/>
+                        </Menu>
                     </div>
                 </Container>
             </Navbar>
